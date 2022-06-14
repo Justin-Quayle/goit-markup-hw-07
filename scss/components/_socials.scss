@@ -1,0 +1,75 @@
+.socnet__list {
+    display: flex;
+    list-style: none;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
+.socnet__item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &:hover .socnet__item-icon,
+    &:focus .socnet__item-icon {
+        fill: var(--prime-bcg);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+}
+
+.socnet__item-icon {
+    fill: var(--icons);
+}
+
+.footer__socnet-list {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer__socnet-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+    
+    &:hover,
+    &:focus {
+        background-color: var(--accent);
+    }
+
+    &:hover .footer__socnet-item-icon,
+    &:focus .footer__socnet-item-icon {
+        fill: var(--prime-bcg);
+    }
+
+}
+
+.footer__socnet-item-link .footer__socnet-item-icon,
+.footer__socnet-item-link .footer__socnet-item-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__socnet-item-icon {
+    fill: var(--prime-bcg);
+}
