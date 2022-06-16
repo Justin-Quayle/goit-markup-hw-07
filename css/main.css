@@ -192,6 +192,10 @@ body {
   margin-top: 20px;
 }
 
+.footer__socnet-item:not(:first-child) {
+  margin-left: 10px;
+}
+
 .footer__socnet-item-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,22 +215,13 @@ body {
 }
 .footer__socnet-item-link:hover, .footer__socnet-item-link:focus {
   background-color: var(--accent);
-}
-.footer__socnet-item-link:hover .footer__socnet-item-icon, .footer__socnet-item-link:focus .footer__socnet-item-icon {
   fill: var(--prime-bcg);
-}
-.footer__socnet-item-link:not(:first-child) {
-  margin-left: 10px;
-}
-
-.footer__socnet-item-link .footer__socnet-item-icon,
-.footer__socnet-item-link .footer__socnet-item-icon {
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__socnet-item-icon {
   fill: var(--prime-bcg);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -492,8 +487,7 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation__link:hover, .navigation__link:focus,
-.navigation__link .navigation__item .current {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--accent);
 }
 .navigation__link.current::after {
@@ -506,6 +500,10 @@ body {
   left: 0;
   top: 44px;
   position: absolute;
+}
+
+.navigation__item .current {
+  color: var(--accent);
 }
 
 .feedback {
@@ -811,10 +809,6 @@ body {
 
 .clients__logo {
   fill: var(--icons);
-}
-
-.clients__link .clients__logo,
-.clients__link .clients__logo {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
